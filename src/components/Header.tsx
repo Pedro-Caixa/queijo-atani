@@ -13,7 +13,7 @@ function Card({ imageSrc, title, subtitle, hasLine }) {
           <h3 class="text-grey-regular">{title}</h3>
           <h1 class="text-black-regular font-manrope">{subtitle}</h1>
         </div>
-        {hasLine && <div class="h-20 w-0.5 mx-3 bg-grey-regular"></div>}  {/* Conditionally render the line */}
+        {hasLine && <div class="h-20 w-0.5 mx-3 bg-grey-regular"></div>}
       </div>
     );
   }
