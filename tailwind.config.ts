@@ -29,7 +29,10 @@ const config: Config = {
         'bermuda': '#78dcca',
         "grey-regular": '#878680',
         "grey-secondary": '#F8F7F0',
-        "black-regular": '#1F1E17'
+        "black-regular": '#1F1E17',
+        'mustard-yellow': '#C5CE38',
+        'green-regular': '#4BAF47',
+        'orange-regular': '#EEC044'
       }
     },
   },
