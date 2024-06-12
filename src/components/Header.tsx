@@ -1,3 +1,6 @@
+
+'use client'
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -7,7 +10,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 
 function Card({ imageSrc, title, subtitle, hasLine }) {
     return (
-        <div className="flex items-center">
+        <div className="flex items-center ">
             <img className="h-8 w-8 mr-4" src={imageSrc} alt="" />
             <div className="flex flex-col">
                 <h3 className="text-grey-regular text-sm">{title}</h3>
@@ -28,6 +31,7 @@ function SocialMedia({ icon, redirectLink }) {
 
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
     library.add(fab, fas, far)
     return <>
         <div className="flex">
@@ -47,6 +51,12 @@ export default function Header() {
                         icon={"fa-brands fa-instagram"}
                         redirectLink={"https://instagram.com"}
                     />
+                    <button 
+                        className="md:hidden ml-4 p-2 bg-gray-200 rounded-md hover:bg-gray-400"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                    >
+                        <FontAwesomeIcon icon={['fas', 'bars']} />
+                    </button>
                 </nav>
                 <nav className="items-center w-full max-w-auto h-auto mx-auto flex flex-row">
                     <Card
