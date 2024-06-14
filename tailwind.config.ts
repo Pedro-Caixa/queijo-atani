@@ -12,9 +12,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "paper-image": "url('https://i.ibb.co/g7L3VH6/image.png')",
+        "queijo-image": "url('https://i.ibb.co/vJSgLmX/image3.png')"
       },
       fontFamily: {
         'manrope':  ['Manrope', "sans-serif"],
+      },
+      spacing: {
+        '128': '30rem',
       },
       colors: {
         transparent: 'transparent',
@@ -32,7 +37,9 @@ const config: Config = {
         "black-regular": '#1F1E17',
         'mustard-yellow': '#C5CE38',
         'green-regular': '#4BAF47',
-        'orange-regular': '#EEC044'
+        'orange-regular': '#EEC044',
+        "header-grey": '#878680 ',
+        "grey-cool": '#E4E2D7'
       }
     },
   },
